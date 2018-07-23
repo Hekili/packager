@@ -75,7 +75,7 @@ skip_externals=
 skip_localization=
 skip_zipfile=
 skip_upload=
-skip_cf_upload=
+skip_cf_upload=true
 
 # Process command-line options
 usage() {
