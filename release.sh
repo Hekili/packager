@@ -39,7 +39,7 @@ if [ -n "$TRAVIS" ]; then
 		echo "Not packaging \"${TRAVIS_BRANCH}\"."
 		exit 0
 	fi
-	 don't need to run the packager if there is a tag pending
+	# don't need to run the packager if there is a tag pending
 	#if [ -z "$TRAVIS_TAG" ]; then
 	#	TRAVIS_TAG=$( git -C "$TRAVIS_BUILD_DIR" tag --points-at )
 		#if [ -n "$TRAVIS_TAG" ]; then
