@@ -1946,10 +1946,10 @@ if [ -z "$skip_zipfile" ]; then
 		# are considered alphas.
 		file_type=alpha
 		if [ -n "$tag" ]; then
-			if [[ "$tag" =~ ^v?[0-9][0-9.]*$ || "${tag,,}" == *"release"* ]]; then
-				file_type=release
-			else
+			if [[ "${tag,,}" == *"beta"* ]] then
 				file_type=beta
+			elif [[ "$tag" =~ ^v?[0-9][-0-9.]*$ || "${tag,,}" == *"release"* ]]; then
+				file_type=release
 			fi
 		fi
 
